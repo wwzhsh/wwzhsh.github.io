@@ -175,6 +175,107 @@
 </description>
         </item>
         <item>
+        <title>服务器的类别</title>
+        <link>https://wwzhsh.github.io/p/4/</link>
+        <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://wwzhsh.github.io/p/4/</guid>
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1730009318626_20241027140819.png" alt="Featured image of post 服务器的类别" /&gt;&lt;h1 id=&#34;服务器类别概述&#34;&gt;服务器类别概述
+&lt;/h1&gt;&lt;h2 id=&#34;前言简介&#34;&gt;前言简介
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    在数字化和互联网快速发展的今天，服务器作为支撑网站、应用程序及各种在线服务的基础架构，扮演着至关重要的角色。无论是个人博客、中小企业还是大型企业，选择合适的服务器类型对于确保业务稳定运行和服务质量至关重要。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     本教程旨在为读者提供一个全面的指南，帮助您理解当前市场上不同类型的服务器及其特点。通过了解独立服务器、虚拟服务器（VPS）、基于NAT的虚拟服务器（NAT-VPS）、云服务器、托管服务器以及共享主机等各类服务器的特点，您可以根据自身业务需求、预算和技术能力做出明智的选择。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    我们将逐一探讨每种服务器的优点与缺点，涵盖从成本效益到安全性，再到可扩展性和管理便捷性等多个方面。无论您是刚开始接触服务器概念的新手，还是寻求升级现有基础设施的经验丰富的IT专业人士，这篇教程都将为您提供宝贵的信息，助力您找到最适合您的解决方案。现在，让我们深入探索这些服务器种类，以便更好地服务于您的项目或业务目标。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;1-独立服务器&#34;&gt;(1) 独立服务器
+&lt;/h2&gt;&lt;p&gt;独立服务器（又称母鸡、独服）是服务商提供的一整台物理服务器，所有资源专属于您，不会与他人共享。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;性能强大，资源充足。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;成本较高，通常价格在300元以上，高性能的可能会达到四位数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-虚拟服务器-vps&#34;&gt;(2) 虚拟服务器 (VPS)
+&lt;/h2&gt;&lt;p&gt;虚拟服务器（VPS、小鸡）利用虚拟化技术，将一台物理服务器的资源分割成多个虚拟服务器，提供给用户使用。价格相对独立服务器更低，配置灵活。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源灵活分配，可按需选择配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;宿主物理服务器故障时，所有虚拟机会受到影响（虽然这种情况较少）。&lt;/li&gt;
+&lt;li&gt;部分服务商可能存在超售现象，或遇到恶意用户影响性能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-基于-nat-的虚拟服务器-nat-vps&#34;&gt;(3) 基于 NAT 的虚拟服务器 (NAT-VPS)
+&lt;/h2&gt;&lt;p&gt;NAT-VPS是在虚拟服务器基础上，通过共享IP提供外网访问能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;成本更低，几乎没有IP费用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若邻居使用VPN等工具，可能导致IP被封锁。&lt;/li&gt;
+&lt;li&gt;被封锁后，同一IP下的所有服务器将无法连接。&lt;/li&gt;
+&lt;li&gt;只能使用固定端口访问，限制了建站功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-云服务器&#34;&gt;(4) 云服务器
+&lt;/h2&gt;&lt;p&gt;云服务器（云主机）基于云计算技术，提供虚拟化计算资源，通常由大型云服务提供商（如阿里云、腾讯云、AWS等）提供。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;弹性伸缩：可快速调整计算能力。&lt;/li&gt;
+&lt;li&gt;高可用性：数据和服务可在多个位置复制。&lt;/li&gt;
+&lt;li&gt;按需付费：根据使用量计费，更灵活。&lt;/li&gt;
+&lt;li&gt;易于管理：提供简化的管理界面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据隐私问题：敏感数据存储在第三方。&lt;/li&gt;
+&lt;li&gt;网络依赖：网络故障可能影响服务可用性。&lt;/li&gt;
+&lt;li&gt;长期使用成本：按需付费虽看似经济，但长期使用总成本可能高于物理服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-托管服务器&#34;&gt;(5) 托管服务器
+&lt;/h2&gt;&lt;p&gt;托管服务器是客户购买自己的硬件并放置在服务商数据中心，由服务商提供基础设施支持。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完全控制：客户可自由选择硬件和软件。&lt;/li&gt;
+&lt;li&gt;稳定性与安全性：专业数据中心提供更优环境。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始投资较高：需购买硬件设备。&lt;/li&gt;
+&lt;li&gt;维护责任：客户需自行处理系统级维护。&lt;/li&gt;
+&lt;li&gt;升级复杂：硬件固定后，升级过程相对复杂。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-共享主机&#34;&gt;(6) 共享主机
+&lt;/h2&gt;&lt;p&gt;共享主机是最基础的网站托管形式，适合小型网站和个人博客。在此模式下，多个用户共享同一台物理服务器的资源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;成本低：适合预算有限的小型项目。&lt;/li&gt;
+&lt;li&gt;易于使用：通常配备简单控制面板，便于管理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源受限：共享资源，可能影响性能。&lt;/li&gt;
+&lt;li&gt;性能波动：其他用户活动可能影响网站表现。&lt;/li&gt;
+&lt;li&gt;安全风险：若某用户受攻击，可能影响其他用户。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总结来说，每种服务器类型都有其适用场景和优缺点，选择时应根据自身需求和预算做出决策。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>利用GitHub开源项目建立个人网址导航站</title>
         <link>https://wwzhsh.github.io/p/2/</link>
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
