@@ -11,8 +11,26 @@
     <loc>https://wwzhsh.github.io/post/</loc>
     <lastmod>2024-10-29T14:54:59+08:00</lastmod>
   </url><url>
+    <loc>https://wwzhsh.github.io/posts/blog-post-slug/</loc>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wwzhsh.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wwzhsh.github.io/posts/</loc>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wwzhsh.github.io/tags/</loc>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wwzhsh.github.io/categories/%E7%99%BD%E5%AB%96/</loc>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wwzhsh.github.io/tags/%E5%85%8D%E8%B4%B9/</loc>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wwzhsh.github.io/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wwzhsh.github.io/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
@@ -42,9 +60,6 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wwzhsh.github.io/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wwzhsh.github.io/tags/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wwzhsh.github.io/tags/themes/</loc>
