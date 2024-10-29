@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>教程 on 万物之时</title>
+        <link>https://wwzhsh.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <description>Recent content in 教程 on 万物之时</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>万物之时</copyright>
+        <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wwzhsh.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>利用GitHub开源项目建立个人网址导航站</title>
+        <link>https://wwzhsh.github.io/p/2/</link>
+        <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://wwzhsh.github.io/p/2/</guid>
+        <description>&lt;h1 id=&#34;项目地址-httpsgithubcompintree-iopintree&#34;&gt;项目地址 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Pintree-io/pintree&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Pintree-io/pintree&lt;/a&gt;
+&lt;/h1&gt;&lt;h1 id=&#34;下方文本全盘照搬项目原文推荐去看原文&#34;&gt;下方文本全盘照搬项目原文，推荐去看原文
+&lt;/h1&gt;&lt;h1 id=&#34;pintree&#34;&gt;Pintree
+&lt;/h1&gt;&lt;p&gt;Pintree 是一个开源项目，旨在将浏览器书签导出成导航网站。通过简单的几步操作，就可以将书签转换成一个美观且易用的导航页面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;项目功能和目标&#34;&gt;项目功能和目标
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;导出浏览器书签&lt;/li&gt;
+&lt;li&gt;将书签文件转换成JSON格式&lt;/li&gt;
+&lt;li&gt;生成静态导航网站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装和运行&#34;&gt;安装和运行
+&lt;/h2&gt;&lt;h3 id=&#34;步骤-1下载浏览器书签&#34;&gt;步骤 1：下载浏览器书签
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;安装 &lt;a class=&#34;link&#34; href=&#34;https://microsoftedge.microsoft.com/addons/detail/pintree-bookmarks-exporte/binmofchlenaimbnocogbpebiodjlgkm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pintree Bookmarks Exporter&lt;/a&gt; 插件。&lt;/li&gt;
+&lt;li&gt;使用插件导出浏览器书签，并保存 JSON 文件到本地。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729088930803_Clip_2024-10-16_22-28-39.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤-2fork-项目&#34;&gt;步骤 2：Fork 项目
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;访问 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Pintree-io/pintree&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pintree GitHub 仓库&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;点击页面右上角的 &lt;code&gt;Fork&lt;/code&gt; 按钮，将项目 Fork 到您的 GitHub 账号中。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729089095760_step2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤-3替换-json-文件&#34;&gt;步骤 3：替换 JSON 文件
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;打开您 GitHub 账号中的 &lt;code&gt;pintree&lt;/code&gt; 仓库（即刚才 Fork 的项目）。&lt;/li&gt;
+&lt;li&gt;点击仓库中的 &lt;code&gt;json&lt;/code&gt; 文件夹。&lt;/li&gt;
+&lt;li&gt;点击 &lt;code&gt;Upload files&lt;/code&gt; 按钮，选择刚才下载的 JSON 文件，并上传。&lt;/li&gt;
+&lt;li&gt;确保上传的文件命名为 &lt;code&gt;pintree.json&lt;/code&gt;，并选择 &lt;code&gt;Commit changes&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729089110492_step3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤-4启用-github-pages&#34;&gt;步骤 4：启用 GitHub Pages
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;在您的 &lt;code&gt;pintree&lt;/code&gt; 仓库页面，点击 &lt;code&gt;Settings&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;找到 &lt;code&gt;Pages&lt;/code&gt; 选项。&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;Source&lt;/code&gt; 下拉菜单中，选择 &lt;code&gt;gh-pages&lt;/code&gt; 分支，然后点击 &lt;code&gt;Save&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;几分钟后，您的静态网站将会在 &lt;code&gt;https://yourusername.github.io/pintree&lt;/code&gt; 上可用。记得替换 &lt;code&gt;yourusername&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729089110692_step4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
