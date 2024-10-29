@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 万物之时</title>
-        <link>https://wwzhsh.github.io/categories/</link>
+        <link>https://hugo.126330.xyz/categories/</link>
         <description>Recent content in Categories on 万物之时</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>万物之时</copyright>
-        <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wwzhsh.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo.126330.xyz/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>白嫖</title>
-        <link>https://wwzhsh.github.io/categories/%E7%99%BD%E5%AB%96/</link>
+        <link>https://hugo.126330.xyz/categories/%E7%99%BD%E5%AB%96/</link>
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://wwzhsh.github.io/categories/%E7%99%BD%E5%AB%96/</guid>
+        <guid>https://hugo.126330.xyz/categories/%E7%99%BD%E5%AB%96/</guid>
         <description></description>
         </item>
         <item>
         <title>教程</title>
-        <link>https://wwzhsh.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <link>https://hugo.126330.xyz/categories/%E6%95%99%E7%A8%8B/</link>
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://wwzhsh.github.io/categories/%E6%95%99%E7%A8%8B/</guid>
+        <guid>https://hugo.126330.xyz/categories/%E6%95%99%E7%A8%8B/</guid>
         <description></description>
         </item>
         <item>
         <title>Test</title>
-        <link>https://wwzhsh.github.io/categories/test/</link>
+        <link>https://hugo.126330.xyz/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://wwzhsh.github.io/categories/test/</guid>
-        <description>&lt;img src="https://wwzhsh.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://hugo.126330.xyz/categories/test/</guid>
+        <description>&lt;img src="https://hugo.126330.xyz/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>
