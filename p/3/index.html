@@ -73,7 +73,7 @@
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">万物之时</a></h1>
-            <h2 class="site-description">万物之时</h2>
+            <h2 class="site-description">欢迎来到我的博客</h2>
         </div>
     </header><ol class="menu-social">
             
@@ -649,36 +649,50 @@
      
     
         
-    <div id="gitalk-container"></div>
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
-<script>
-    const gitalk = new Gitalk({
-        clientID: "Ov23litQqu4Rb4BFddP4",
-        clientSecret: "a6489fd8adc6dce0b408c964faf382d2e9ac75a3",
-        repo: "gitalk",
-        owner: "wwzhsh",
-        admin: ["wwzhsh"],
-        distractionFreeMode: false, 
-        id: md5(location.pathname), 
-        proxy: null ,
-    });
-    (function () {
-        if (
-            ["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1
-        ) {
-            document.getElementById("gitalk-container").innerHTML =
-                "Gitalk comments not available by default when the website is previewed locally.";
-            return;
-        }
-        gitalk.render("gitalk-container");
-    })();
+    <script src="https://utteranc.es/client.js" 
+        repo="wwzhsh/wwzhsh.github.io"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
 </script>
 
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
 
 
     
