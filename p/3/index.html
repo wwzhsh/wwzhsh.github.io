@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Pintree 是一个开源项目，旨在将浏览器书签导出成导航网站。通过简单的几步操作，就可以将书签转换成一个美观且易用的导航页面">
-<title>利用GitHub开源项目建立个人网址导航站</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Gmeek 是一个超轻量级的个人博客框架，完全基于 GitHub Pages、GitHub Issues 和 GitHub Actions 构建。无需本地部署，从搭建到写作仅需 **18 秒** 和 **两步**，而 **第三步** 就可以开始写作。">
+<title>Gmeek博客一键搭搭建教程</title>
 
-<link rel='canonical' href='https://wwzhsh.github.io/p/2/'>
+<link rel='canonical' href='https://wwzhsh.github.io/p/3/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="利用GitHub开源项目建立个人网址导航站">
-<meta property='og:description' content="Pintree 是一个开源项目，旨在将浏览器书签导出成导航网站。通过简单的几步操作，就可以将书签转换成一个美观且易用的导航页面">
-<meta property='og:url' content='https://wwzhsh.github.io/p/2/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Gmeek博客一键搭搭建教程">
+<meta property='og:description' content="Gmeek 是一个超轻量级的个人博客框架，完全基于 GitHub Pages、GitHub Issues 和 GitHub Actions 构建。无需本地部署，从搭建到写作仅需 **18 秒** 和 **两步**，而 **第三步** 就可以开始写作。">
+<meta property='og:url' content='https://wwzhsh.github.io/p/3/'>
 <meta property='og:site_name' content='万物之时'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='GitHub' /><meta property='article:tag' content='导航' /><meta property='article:published_time' content='2024-10-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-29T00:00:00&#43;00:00'/><meta property='og:image' content='https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png' />
-<meta name="twitter:title" content="利用GitHub开源项目建立个人网址导航站">
-<meta name="twitter:description" content="Pintree 是一个开源项目，旨在将浏览器书签导出成导航网站。通过简单的几步操作，就可以将书签转换成一个美观且易用的导航页面"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='GitHub' /><meta property='article:tag' content='博客' /><meta property='article:published_time' content='2024-10-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-29T00:00:00&#43;00:00'/><meta property='og:image' content='https://tuwwzs.pages.dev/file/1729411266664_light.jpg' />
+<meta name="twitter:title" content="Gmeek博客一键搭搭建教程">
+<meta name="twitter:description" content="Gmeek 是一个超轻量级的个人博客框架，完全基于 GitHub Pages、GitHub Issues 和 GitHub Actions 构建。无需本地部署，从搭建到写作仅需 **18 秒** 和 **两步**，而 **第三步** 就可以开始写作。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tuwwzs.pages.dev/file/1729411266664_light.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -310,15 +310,21 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#项目功能和目标">项目功能和目标</a></li>
-    <li><a href="#安装和运行">安装和运行</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#特点">特点</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#快速上手">快速上手</a>
       <ol>
-        <li><a href="#步骤-1下载浏览器书签">步骤 1：下载浏览器书签</a></li>
-        <li><a href="#步骤-2fork-项目">步骤 2：Fork 项目</a></li>
-        <li><a href="#步骤-3替换-json-文件">步骤 3：替换 JSON 文件</a></li>
-        <li><a href="#步骤-4启用-github-pages">步骤 4：启用 GitHub Pages</a></li>
+        <li><a href="#1-创建仓库">1. 创建仓库</a></li>
+        <li><a href="#2-启用-github-pages">2. 启用 GitHub Pages</a></li>
+        <li><a href="#3-开始写作">3. 开始写作</a></li>
+        <li><a href="#4-手动全局生成">4. 手动全局生成</a></li>
       </ol>
     </li>
+    <li><a href="#提交问题">提交问题</a></li>
+    <li><a href="#总结">总结</a></li>
   </ol>
 </nav>
         </div>
@@ -333,9 +339,9 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/2/">
+            <a href="/p/3/">
                 
-                    <img src="https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png" loading="lazy" alt="Featured image of post 利用GitHub开源项目建立个人网址导航站" />
+                    <img src="https://tuwwzs.pages.dev/file/1729411266664_light.jpg" loading="lazy" alt="Featured image of post Gmeek博客一键搭搭建教程" />
                 
             </a>
         </div>
@@ -354,12 +360,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/2/">利用GitHub开源项目建立个人网址导航站</a>
+            <a href="/p/3/">Gmeek博客一键搭搭建教程</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Pintree 是一个开源项目，旨在将浏览器书签导出成导航网站。通过简单的几步操作，就可以将书签转换成一个美观且易用的导航页面
+            Gmeek 是一个超轻量级的个人博客框架，完全基于 GitHub Pages、GitHub Issues 和 GitHub Actions 构建。无需本地部署，从搭建到写作仅需 **18 秒** 和 **两步**，而 **第三步** 就可以开始写作。
         </h3>
         
     </div>
@@ -395,7 +401,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -410,85 +416,152 @@
     <section class="article-content">
     
     
-    <h1 id="项目地址-httpsgithubcompintree-iopintree">项目地址 <a class="link" href="https://github.com/Pintree-io/pintree"  target="_blank" rel="noopener"
-    >https://github.com/Pintree-io/pintree</a>
-</h1><h1 id="下方文本全盘照搬项目原文推荐去看原文">下方文本全盘照搬项目原文，推荐去看原文
-</h1><h1 id="pintree">Pintree
-</h1><p>Pintree 是一个开源项目，旨在将浏览器书签导出成导航网站。通过简单的几步操作，就可以将书签转换成一个美观且易用的导航页面。</p>
-<p><img src="https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h2 id="项目功能和目标">项目功能和目标
+    <h1 id="项目地址httpsgithubcommeekdaigmeek">项目地址https://github.com/Meekdai/Gmeek
+</h1><h1 id="博客原文地址gmeek博客一键搭搭建教程httpsblogwwzsfuntutorial2html">博客原文地址<a class="link" href="https://blog.wwzs.fun/tutorial/2.html"  target="_blank" rel="noopener"
+    >Gmeek博客一键搭搭建教程</a>
+</h1><h1 id="gmeek-搭建教程">Gmeek 搭建教程
+</h1><p>Gmeek 是一个超轻量级的个人博客框架，完全基于 GitHub Pages、GitHub Issues 和 GitHub Actions 构建。无需本地部署，从搭建到写作仅需 <strong>18 秒</strong> 和 <strong>两步</strong>，而 <strong>第三步</strong> 就可以开始写作。</p>
+<h2 id="前言">前言
+</h2><p>Gmeek 旨在为个人博客提供一个简洁、高效的解决方案。借助 GitHub 的强大功能，你无需担心服务器配置和维护，只需简单几步即可完成博客的搭建与管理。Gmeek 利用了 GitHub Pages 进行静态页面托管，GitHub Issues 作为博客文章的创作平台，GitHub Actions 自动化部署流程，使整个流程自动化、无缝衔接。</p>
+<h2 id="特点">特点
 </h2><ul>
-<li>导出浏览器书签</li>
-<li>将书签文件转换成JSON格式</li>
-<li>生成静态导航网站</li>
+<li>
+<p><strong>与 GitHub 同源的 UI 界面</strong>：采用 GitHub 原生 CSS<a class="link" href="https://primer.style/css"  target="_blank" rel="noopener"
+    >primer.style</a>，界面风格与 GitHub 无缝衔接。</p>
+</li>
+<li>
+<p><strong>自动化部署</strong>：在 Issues 中完成博客写作后，自动触发 GitHub Actions 执行部署任务。</p>
+</li>
+<li>
+<p><strong>评论系统</strong>：集成 <a class="link" href="https://utteranc.es/"  target="_blank" rel="noopener"
+    >utteranc.es</a> 作为评论系统，轻量且易于使用。</p>
+</li>
+<li>
+<p><strong>可自定义主题</strong>：使用 Jinja2 对 HTML 进行渲染，支持通过模板自定义 UI 主题。</p>
+</li>
+<li>
+<p><strong>无需本地部署</strong>：所有操作均在 GitHub 上完成，简化部署流程。</p>
+</li>
 </ul>
-<h2 id="安装和运行">安装和运行
-</h2><h3 id="步骤-1下载浏览器书签">步骤 1：下载浏览器书签
+<h1 id="示例">示例
+</h1><ul>
+<li>
+<p>官方 <a class="link" href="http://meekdai.github.io/"  target="_blank" rel="noopener"
+    >Demo页面</a></p>
+</li>
+<li>
+<p>我建立的<a class="link" href="https://wanwuzhishi.github.io/"  target="_blank" rel="noopener"
+    >https://wanwuzhishi.github.io/</a></p>
+</li>
+</ul>
+<h2 id="快速上手">快速上手
+</h2><p>按照以下步骤，可以在 <strong>两步，18 秒</strong>  内完成 Gmeek 博客的搭建。</p>
+<h3 id="1-创建仓库">1. 创建仓库
 </h3><ol>
-<li>安装 <a class="link" href="https://microsoftedge.microsoft.com/addons/detail/pintree-bookmarks-exporte/binmofchlenaimbnocogbpebiodjlgkm"  target="_blank" rel="noopener"
-    >Pintree Bookmarks Exporter</a> 插件。</li>
-<li>使用插件导出浏览器书签，并保存 JSON 文件到本地。</li>
+<li><strong><a class="link" href="https://github.com/new?template_name=Gmeek-template&amp;template_owner=Meekdai"  target="_blank" rel="noopener"
+    >通过模板创建仓库</a></strong>：</li>
 </ol>
-<p><img src="https://tuwwzs.pages.dev/file/1729088930803_Clip_2024-10-16_22-28-39.png"
+<p>    - 点击<a class="link" href="https://github.com/new?template_name=Gmeek-template&amp;template_owner=Meekdai"  target="_blank" rel="noopener"
+    >通过模板创建仓库</a></p>
+<ol start="2">
+<li><strong>命名仓库</strong>：</li>
+</ol>
+<p>    - 推荐将仓库命名为 <code>YOUR_GITHUB_USERNAME.github.io</code>，其中 <code>YOUR_GITHUB_USERNAME</code> 为你的 GitHub 用户名。</p>
+<p>    - 示例：如果你的 GitHub 用户名为 <code>wanwuzhishi</code>，则仓库名称应为 <code>wanwuzhishi.github.io</code>。</p>
+<p>    <img src="https://tuwwzs.pages.dev/file/1729410432618_Clip_2024-10-20_15-46-41.png"
 	
 	
 	
 	loading="lazy"
 	
+		alt="image"
+	
 	
 ></p>
-<h3 id="步骤-2fork-项目">步骤 2：Fork 项目
-</h3><ol>
-<li>访问 <a class="link" href="https://github.com/Pintree-io/pintree"  target="_blank" rel="noopener"
-    >Pintree GitHub 仓库</a>。</li>
-<li>点击页面右上角的 <code>Fork</code> 按钮，将项目 Fork 到您的 GitHub 账号中。</li>
+<ol start="3">
+<li><strong>完成仓库创建</strong>：</li>
 </ol>
-<p><img src="https://tuwwzs.pages.dev/file/1729089095760_step2.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h3 id="步骤-3替换-json-文件">步骤 3：替换 JSON 文件
+<p>    - 点击 <code>Create repository</code>  完成仓库的创建。</p>
+<h3 id="2-启用-github-pages">2. 启用 GitHub Pages
 </h3><ol>
-<li>打开您 GitHub 账号中的 <code>pintree</code> 仓库（即刚才 Fork 的项目）。</li>
-<li>点击仓库中的 <code>json</code> 文件夹。</li>
-<li>点击 <code>Upload files</code> 按钮，选择刚才下载的 JSON 文件，并上传。</li>
-<li>确保上传的文件命名为 <code>pintree.json</code>，并选择 <code>Commit changes</code>。</li>
+<li><strong>进入仓库设置</strong>：</li>
 </ol>
-<p><img src="https://tuwwzs.pages.dev/file/1729089110492_step3.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h3 id="步骤-4启用-github-pages">步骤 4：启用 GitHub Pages
+<p>    - 在新创建的仓库页面，点击上方的 <code>Settings</code> 标签。</p>
+<ol start="2">
+<li><strong>配置 Pages</strong>：</li>
+</ol>
+<p>    - 在左侧菜单中，找到并点击 <code>Pages</code>。</p>
+<p>    - 在 <code>Build and deployment</code> 部分，设置 <code>Source</code> 为 <code>GitHub Actions</code>。</p>
+<ol start="3">
+<li><strong>保存设置</strong>：</li>
+</ol>
+<p>    - 确认设置后，页面会自动保存，并显示部署状态。</p>
+<h3 id="3-开始写作">3. 开始写作
 </h3><ol>
-<li>在您的 <code>pintree</code> 仓库页面，点击 <code>Settings</code>。</li>
-<li>找到 <code>Pages</code> 选项。</li>
-<li>在 <code>Source</code> 下拉菜单中，选择 <code>gh-pages</code> 分支，然后点击 <code>Save</code>。</li>
-<li>几分钟后，您的静态网站将会在 <code>https://yourusername.github.io/pintree</code> 上可用。记得替换 <code>yourusername</code>。</li>
+<li><strong>创建 Issue 文章</strong>：</li>
 </ol>
-<p><img src="https://tuwwzs.pages.dev/file/1729089110692_step4.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<hr>
+<p>    - 进入仓库的 <code>Issues</code> 页面，点击 <code>New issue</code> 创建一篇新的文章。</p>
+<ol start="2">
+<li><strong>添加标签</strong>：</li>
+</ol>
+<p>    - 在创建 Issue 时，至少添加一个 <code>Label</code>（标签），例如 <code>blog</code>。</p>
+<ol start="3">
+<li><strong>保存 Issue</strong>：</li>
+</ol>
+<p>    - 完成内容撰写后，点击 <code>Submit new issue</code> 提交。</p>
+<ol start="4">
+<li><strong>自动生成博客内容</strong>：</li>
+</ol>
+<p>    - 提交 Issue 后，GitHub Actions 会自动触发构建流程。</p>
+<p>    - 片刻后，你的博客内容将生成并部署到 <code>https://YOUR_GITHUB_USERNAME.github.io</code>。</p>
+<ol start="5">
+<li><strong>查看构建进度</strong>：</li>
+</ol>
+<p>    - 可进入 <code>Actions</code> 页面查看构建的详细进度和日志。</p>
+<h3 id="4-手动全局生成">4. 手动全局生成
+</h3><p>在以下情况下，需要手动全局生成博客内容：</p>
+<ul>
+<li>
+<p>修改了 <code>config.json</code> 文件。</p>
+</li>
+<li>
+<p>出现了构建或显示上的奇怪问题。</p>
+</li>
+</ul>
+<p><strong>操作步骤</strong>：</p>
+<ol>
+<li><strong>进入 Actions 页面</strong>：</li>
+</ol>
+<p>    - 在仓库页面，点击上方的 <code>Actions</code> 标签。</p>
+<ol start="2">
+<li><strong>找到 Build Gmeek 工作流</strong>：</li>
+</ol>
+<p>    - 在左侧工作流列表中，选择 <code>build Gmeek</code>。</p>
+<ol start="3">
+<li><strong>运行工作流</strong>：</li>
+</ol>
+<p>    - 点击 <code>Run workflow</code> 按钮，手动触发一次全局重新生成。</p>
+<h2 id="提交问题">提交问题
+</h2><p>如果在搭建或使用过程中遇到问题，可以参考以下步骤提交问题：</p>
+<ol>
+<li><strong>参考快速上手</strong>：</li>
+</ol>
+<p>    - 检查是否按照快速上手中的步骤正确操作。</p>
+<ol start="2">
+<li><strong>手动全局生成</strong>：</li>
+</ol>
+<p>    - 在提交问题之前，先手动全局生成一次，确保问题不在配置文件或构建流程中。</p>
+<ol start="3">
+<li><strong>提交 Issue</strong>：</li>
+</ol>
+<p>    - 如果问题依旧存在，进入仓库的 <code>Issues</code> 页面，点击 <code>New issue</code> 提交你的问题描述。</p>
+<p>    - 提供尽可能详细的信息，例如错误日志、截图等，以便更快定位问题。</p>
+<ol start="4">
+<li><strong>协助解决</strong>：</li>
+</ol>
+<p>    - 提交后，项目维护者会协助查看构建流程，帮助定位和解决问题。</p>
+<h2 id="总结">总结
+</h2><p>Gmeek 为个人博客的创建和管理提供了一个简洁、快捷且高效的解决方案。通过利用 GitHub 的强大功能，用户无需担心复杂的部署流程，只需专注于内容创作即可。如果你正在寻找一个轻量级且易于维护的博客框架，Gmeek 无疑是一个值得尝试的选择。</p>
 
 </section>
 
@@ -499,7 +572,7 @@
         
             <a href="/tags/github/">GitHub</a>
         
-            <a href="/tags/%E5%AF%BC%E8%88%AA/">导航</a>
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
         
     </section>
 
@@ -533,18 +606,18 @@
             
                 
 <article class="has-image">
-    <a href="/p/3/">
+    <a href="/p/2/">
         
         
             <div class="article-image">
                 
-                    <img src="https://tuwwzs.pages.dev/file/1729411266664_light.jpg" loading="lazy" data-key="3" data-hash="https://tuwwzs.pages.dev/file/1729411266664_light.jpg"/>
+                    <img src="https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png" loading="lazy" data-key="2" data-hash="https://tuwwzs.pages.dev/file/1729088850082_Clip_2024-10-16_22-27-15.png"/>
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Gmeek博客一键搭搭建教程</h2>
+            <h2 class="article-title">利用GitHub开源项目建立个人网址导航站</h2>
         </div>
     </a>
 </article>
