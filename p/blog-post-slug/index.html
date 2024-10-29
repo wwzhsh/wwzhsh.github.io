@@ -606,56 +606,37 @@
      
     
         
-    <script
-    src="https://giscus.app/client.js"
-    data-repo="wwzhsh/wwzhsh.github.io"
-    data-repo-id="R_kgDONHYJDA"
-    data-category="Announcements"
-    data-category-id="DIC_kwDONHYJDM4Cjyxi"
-    data-mapping="url"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light"
-    data-lang="zh-cn"
-    data-loading=""
-    crossorigin="anonymous"
-    async
-></script>
+    <div id="gitalk-container"></div>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
 <script>
-    function setGiscusTheme(theme) {
-        let giscus = document.querySelector("iframe.giscus-frame");
-        if (giscus) {
-            giscus.contentWindow.postMessage(
-                {
-                    giscus: {
-                        setConfig: {
-                            theme: theme,
-                        },
-                    },
-                },
-                "https://giscus.app"
-            );
-        }
-    }
-
+    const gitalk = new Gitalk({
+        clientID: "Ov23liN1vHuNpHid6Mt2",
+        clientSecret: "798957efafc3870d23d1ad3bcc3e1bb3fbecd517",
+        repo: "wwzhsh.github.io",
+        owner: "wwzhsh",
+        admin: ["wwzhsh"],
+        distractionFreeMode: false, 
+        id: md5(location.pathname), 
+        proxy: null ,
+    });
     (function () {
-        addEventListener("message", (e) => {
-            if (event.origin !== "https://giscus.app") return;
-            handler();
-        });
-        window.addEventListener("onColorSchemeChange", handler);
-
-        function handler() {
-            if (document.documentElement.dataset.scheme === "light") {
-                setGiscusTheme('light');
-            } else {
-                setGiscusTheme('preferred_color_scheme');
-            }
+        if (
+            ["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1
+        ) {
+            document.getElementById("gitalk-container").innerHTML =
+                "Gitalk comments not available by default when the website is previewed locally.";
+            return;
         }
+        gitalk.render("gitalk-container");
     })();
 </script>
+
+
 
     
 
