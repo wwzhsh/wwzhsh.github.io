@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>图床 on 万物之时</title>
+        <link>https://hugo.126330.xyz/tags/%E5%9B%BE%E5%BA%8A/</link>
+        <description>Recent content in 图床 on 万物之时</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>万物之时</copyright>
+        <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo.126330.xyz/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>基于 Cloudflare Pages 和 Telegram的免费图床搭建教程</title>
+        <link>https://hugo.126330.xyz/p/6/</link>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hugo.126330.xyz/p/6/</guid>
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1729153609714_68747470733a2f2f616c6973742e73616e7975652e736974652f642f696d676265642f3230323431303031313434333537302e706e67.png" alt="Featured image of post 基于 Cloudflare Pages 和 Telegram的免费图床搭建教程" /&gt;&lt;h1 id=&#34;项目地址httpsgithubcommarseventhcloudflare-imgbed&#34;&gt;项目地址https://github.com/MarSeventh/CloudFlare-ImgBed
+&lt;/h1&gt;&lt;p&gt;‼️ &lt;strong&gt;本方案基于 Cloudflare Pages 和 Telegram （文件大小不超过20MB，过大图片会自动压缩）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;一介绍&#34;&gt;一，介绍
+&lt;/h1&gt;&lt;h2 id=&#34;1开源&#34;&gt;&lt;strong&gt;1.开源&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;前端开源（可自行修改、打包使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2炫酷的动效&#34;&gt;&lt;strong&gt;2.炫酷的动效（&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;流畅丝滑的过渡动画~&lt;/li&gt;
+&lt;li&gt;上传文件实现呼吸灯效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3人性化上传&#34;&gt;&lt;strong&gt;3.人性化上传&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持绝大多数常见&lt;strong&gt;图片、视频、动图&lt;/strong&gt;等&lt;/li&gt;
+&lt;li&gt;支持多种上传方式（&lt;strong&gt;拖拽点击、粘贴&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;粘贴上传支持&lt;strong&gt;文件&lt;/strong&gt;和&lt;strong&gt;URL&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;支持批量上传（不限同时选择文件数量，但为了保证稳定性，同时处于上传状态的文件最多为10个）&lt;/li&gt;
+&lt;li&gt;上传显示实时上传进度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;上传后图片无需手动点击，可直接展示在管理页面中&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;过大图片在前端进行压缩，提升上传稳定性和加载性能&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;支持自定义压缩质量，自定义开启前后端压缩功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4多样化复制&#34;&gt;&lt;strong&gt;4.多样化复制&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持&lt;strong&gt;整体复制&lt;/strong&gt;和&lt;strong&gt;单独复制&lt;/strong&gt;（整体复制即将所有链接通过换行串联起来后复制）&lt;/li&gt;
+&lt;li&gt;支持&lt;strong&gt;MarkDown、HTML、BBCode和原始链接&lt;/strong&gt;四种格式复制&lt;/li&gt;
+&lt;li&gt;上传完成后直观展示四种格式链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5支持身份认证防滥用&#34;&gt;&lt;strong&gt;5.支持身份认证、防滥用&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持Web和API&lt;strong&gt;上传认证&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;支持访问域名限制&lt;/li&gt;
+&lt;li&gt;支持上传IP统计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6支持页面自定义&#34;&gt;&lt;strong&gt;6.支持页面自定义&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;页面背景支持&lt;strong&gt;单图&lt;/strong&gt;、&lt;strong&gt;自定义多图轮播&lt;/strong&gt;、&lt;strong&gt;bing随机图轮播&lt;/strong&gt;等多种模式&lt;/li&gt;
+&lt;li&gt;自定义图床名称和Logo&lt;/li&gt;
+&lt;li&gt;自定义网站标题和Icon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7一些小功能&#34;&gt;&lt;strong&gt;7.一些小功能&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持&lt;strong&gt;随机图&lt;/strong&gt;API，从图床中随机返回一张图片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8以及原版所有特性&#34;&gt;&lt;strong&gt;8.以及原版所有特性&lt;/strong&gt;
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.无限图片储存数量，你可以上传不限数量的图片&lt;/p&gt;
+&lt;p&gt;2.无需购买服务器，托管于 Cloudflare 的网络上，当使用量不超过 Cloudflare 的免费额度时，完全免费&lt;/p&gt;
+&lt;p&gt;3.无需购买域名，可以使用 Cloudflare Pages 提供的&lt;code&gt;*.pages.dev&lt;/code&gt;的免费二级域名，同时也支持绑定自定义域名&lt;/p&gt;
+&lt;p&gt;4.支持&lt;strong&gt;图片审查&lt;/strong&gt; API，可根据需要开启，开启后不良图片将自动屏蔽，不再加载&lt;/p&gt;
+&lt;p&gt;5.支持&lt;strong&gt;后台图片管理&lt;/strong&gt;，可以对上传的图片进行在线预览，添加白名单，黑名单等操作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;二部署&#34;&gt;二，&lt;strong&gt;部署&lt;/strong&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;1创建telegram机器人得到tg_bot_token&#34;&gt;1.创建Telegram机器人得到&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;向&lt;a class=&#34;link&#34; href=&#34;https://t.me/BotFather&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@BotFather&lt;/a&gt;发送&lt;code&gt;/newbot&lt;/code&gt;，按照提示输入bot的备注、用户名等信息。成功创建如图所示的红色部分为&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154237023_Screenshot_20241017_155651_edit_574428759597799.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154237023_Screenshot_20241017_155651_edit_574428759597799.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;创建telegram频道得到tg_chat_id&#34;&gt;创建Telegram频道得到**&lt;code&gt;TG_CHAT_ID&lt;/code&gt;**
+&lt;/h2&gt;&lt;p&gt;创建一个新的频道（Channel），并按下图所示将机器人加入频道&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154241321_Screenshot_20241017_160513_edit_574445754749303.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154241321_Screenshot_20241017_160513_edit_574445754749303.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154241183_Screenshot_20241017_160520_edit_574457710440653.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154241183_Screenshot_20241017_160520_edit_574457710440653.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;选择你刚创建的频道授予机器人管理员权限&#34;&gt;选择你刚创建的频道，授予机器人管理员权限
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154244368_Screenshot_20241017_160533_edit_574471031884085.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154244368_Screenshot_20241017_160533_edit_574471031884085.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;向versatoolsbothttpstmeversatoolsbot转发一条第2步新建频道中的消息获取tg_chat_id频道id&#34;&gt;向&lt;a class=&#34;link&#34; href=&#34;https://t.me/VersaToolsBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@VersaToolsBot&lt;/a&gt;&lt;strong&gt;转发&lt;/strong&gt;一条第2步新建频道中的消息，获取&lt;code&gt;TG_CHAT_ID&lt;/code&gt;（频道ID）
+&lt;/h2&gt;&lt;aside&gt; ‼️ **频道ID前有个负号不要忘了!!**
+&lt;/aside&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154245823_Screenshot_20241017_161503_edit_574486968755694.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154245823_Screenshot_20241017_161503_edit_574486968755694.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;部署于cloudflare&#34;&gt;部署于Cloudflare
+&lt;/h2&gt;&lt;p&gt;依托于CF的强大能力，只需简单几步，即可部署本项目，拥有自己的图床。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/MarSeventh/CloudFlare-ImgBed&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Fork&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729153327657_Clip_2024-10-17_16-21-51.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729153327657_Clip_2024-10-17_16-21-51.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 &lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloudflare Dashboard&lt;/a&gt;，进入 Pages 管理页面，选择创建项目，选择&lt;code&gt;连接到 Git 提供程序&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://alist.sanyue.site/d/imgbed/202407201047300.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://alist.sanyue.site/d/imgbed/202407201047300.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;按照页面提示输入项目名称，选择需要连接的 git 仓库，点击&lt;code&gt;部署站点&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将前面获取的&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;和&lt;code&gt;TG_CHAT_ID&lt;/code&gt;分别添加到环境变量中，对应&lt;strong&gt;环境变量名为&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;和&lt;code&gt;TG_CHAT_ID&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;绑定KV数据库&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个新的KV数据库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729153507708_Clip_2024-10-17_16-24-57.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729153507708_Clip_2024-10-17_16-24-57.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入项目对应&lt;code&gt;设置&lt;/code&gt;&amp;gt;&lt;code&gt;函数&lt;/code&gt;&amp;gt;&lt;code&gt;KV 命名空间绑定&lt;/code&gt;&amp;gt;&lt;code&gt;编辑绑定&lt;/code&gt;&amp;gt;&lt;code&gt;变量名称&lt;/code&gt;，填写&lt;code&gt;img_url&lt;/code&gt;，KV命名空间选择刚才创建好的KV数据库&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;重试部署&lt;/code&gt;，此时项目即可正常使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

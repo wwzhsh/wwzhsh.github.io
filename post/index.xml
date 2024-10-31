@@ -7,7 +7,674 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>万物之时</copyright>
-        <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo.126330.xyz/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo.126330.xyz/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hexo博客搭建</title>
+        <link>https://hugo.126330.xyz/p/7/</link>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hugo.126330.xyz/p/7/</guid>
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1730220319146_Clip_2024-10-30_00-45-03.png" alt="Featured image of post Hexo博客搭建" /&gt;&lt;h2 id=&#34;什么是-hexo&#34;&gt;&lt;strong&gt;什么是 Hexo？&lt;/strong&gt;
+&lt;/h2&gt;&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。 Hexo 使用 &lt;a class=&#34;link&#34; href=&#34;http://daringfireball.net/projects/markdown/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown&lt;/a&gt;（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;h1 id=&#34;一搭建前的软件准备&#34;&gt;一，搭建前的软件准备
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;搭建之前需要准备的软件： Git：官网下载：&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://git-scm.com/&lt;/a&gt;
+Git安装教程:&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/xueweisuoyong/p/11914045.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.cnblogs.com/xueweisuoyong/p/11914045.html&lt;/a&gt;
+Node.js 官网下载：&lt;a class=&#34;link&#34; href=&#34;http://nodejs.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://nodejs.cn/&lt;/a&gt;
+这篇文章里有修改node.js缓存路径的教学:&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/liuqiyun/p/8133904.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.cnblogs.com/liuqiyun/p/8133904.html&lt;/a&gt; 如果觉得下载麻烦可以通过网盘下载：
+小飞机网盘下载链接：（node-v20.18.0-x64，Git-2.46.2-64-bit） 链接：&lt;a class=&#34;link&#34; href=&#34;https://share.feijipan.com/s/voCrF8tW&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://share.feijipan.com/s/voCrF8tW&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;测试下是否都下载成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;node&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-v&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-v&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-v&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;二-安装hexo&#34;&gt;二， 安装hexo。
+&lt;/h1&gt;&lt;h1 id=&#34;下载hexo&#34;&gt;下载hexo
+&lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;hexo-cli&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-g&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;本地生成博客内容&#34;&gt;本地生成博客内容
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在喜欢位置新建文件Blog，然后进入文件夹&lt;/li&gt;
+&lt;li&gt;右键空白处然后点Git bash here，依次输入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;hexo&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;init&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;hexo&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;install&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;如果提示‘command not find’，就在前面加上npx，如：npx hexo init&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;接着依次输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;hexo&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;g&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;hexo&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;s&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;国内与github连接不稳定，可能无法连接，最好挂个梯子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;#搭建GitHub仓库&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注册/登入&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;点击Create a new repository（创建仓库）进入新建仓库页面&lt;/li&gt;
+&lt;li&gt;仓库名输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;用户名.github.io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意：此处必须为你的GitHub用户名&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/wanwuzhishi/picx-images-hosting@master/Clip_2024-10-07_22-10-04.7p3l109rpo.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://cdn.jsdelivr.net/gh/wanwuzhishi/picx-images-hosting@master/Clip_2024-10-07_22-10-04.7p3l109rpo.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;勾选 Public（公共）&lt;/p&gt;
+&lt;p&gt;勾选 Add a README file（添加一个README文件）&lt;/p&gt;
+&lt;p&gt;拉到下面点击create（创建 ）创建&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/wanwuzhishi/picx-images-hosting@master/Clip_2024-10-07_22-11-53.361jy16mei.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://cdn.jsdelivr.net/gh/wanwuzhishi/picx-images-hosting@master/Clip_2024-10-07_22-11-53.361jy16mei.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;生成ssh-keys&#34;&gt;生成SSH Keys
+&lt;/h1&gt;&lt;p&gt;进入任意文件夹，右键空白处然后点Git bash here,输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;ssh-keygen&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-t&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;rsa&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-C&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;邮件地址&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;此处“邮件地址”为你注册GitHub的邮件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;敲4次Enter&lt;/li&gt;
+&lt;li&gt;进入C:\Users\用户名，在里面进入.ssh文件&lt;/li&gt;
+&lt;li&gt;用记事本打开里面的id_rsa.pub,全选复制里面的代码&lt;/li&gt;
+&lt;li&gt;然后打开&lt;a class=&#34;link&#34; href=&#34;https://github.com/settings/profile&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;进入用户设置，找到SSH keys&lt;/li&gt;
+&lt;li&gt;新建SSH keys，名称随意，在下面粘贴代码，&lt;/li&gt;
+&lt;li&gt;点击创建 ##测试是否成功 在git bash中输入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ssh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;敲Enter，然后再输入yes&lt;/p&gt;
+&lt;h1 id=&#34;本地博客部署到github&#34;&gt;本地博客部署到GitHub
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;进入之前的Blog文件夹，用记事本打开_config.yml&lt;/li&gt;
+&lt;li&gt;拉到最下面将deploy后面的全删掉，复制粘贴这段&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;repository:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;branch:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意缩进格式：每行前面都有两个空格不要删，每个冒号后面都有个空格也不要删&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;去github之前生成的仓库页面，点code，复制https链接&lt;/li&gt;
+&lt;li&gt;将其粘贴到我们记事本中的repository：后面&lt;/li&gt;
+&lt;li&gt;然后保存退出 ##回到博客文件夹，git bash 安装自动部署发布工具&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install hexo-deployer-git --save
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后在Blog文件夹右键打开git bash，依次输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hexo g（生成）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hexo d（上传）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果是第一次使用git的话会需要配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.email &amp;#34;你的邮箱&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.name &amp;#34;你的名字&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;配置完后再 &lt;code&gt;hexo d&lt;/code&gt; 上传&lt;/p&gt;
+&lt;p&gt;在跳出来的窗口内进行登录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/wanwuzhishi/picx-images-hosting@master/Clip_2024-10-07_22-33-18.1025ca6otu.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://cdn.jsdelivr.net/gh/wanwuzhishi/picx-images-hosting@master/Clip_2024-10-07_22-33-18.1025ca6otu.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这样就成功把本地内容上传到github了&lt;/p&gt;
+&lt;p&gt;上传成功以后，我们就算搭建好了！上自己的网址看看吧&lt;/p&gt;
+&lt;p&gt;网址是我们之前设的仓库名：&lt;a class=&#34;link&#34; href=&#34;http://xn--eqr924avxo.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;用户名.github.io&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>WPS定时重放脚本框架，零成本，无需服务器，无需部署</title>
+        <link>https://hugo.126330.xyz/p/8/</link>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hugo.126330.xyz/p/8/</guid>
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1730218015576_Clip_2024-10-30_00-06-39.png" alt="Featured image of post WPS定时重放脚本框架，零成本，无需服务器，无需部署" /&gt;&lt;h1 id=&#34;项目地址githubhttpsgithubcomimokisign_script&#34;&gt;项目地址&lt;a class=&#34;link&#34; href=&#34;https://github.com/imoki/sign_script&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt;
+&lt;/h1&gt;&lt;h1 id=&#34;教程地址默库httpsmokuuskg&#34;&gt;教程地址&lt;a class=&#34;link&#34; href=&#34;https://moku.us.kg/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;默库&lt;/a&gt;
+&lt;/h1&gt;&lt;h1 id=&#34;项目介绍&#34;&gt;项目介绍
+&lt;/h1&gt;&lt;h2 id=&#34;聚合脚本polymerization&#34;&gt;聚合脚本（polymerization）
+&lt;/h2&gt;&lt;p&gt;文件夹“polymerization”内的所有脚本统称为聚合脚本，运行UPDATE.js即可自动生成表格及配置内容。&lt;br&gt;
+兼容青龙脚本，可直接在青龙内下运行&lt;/p&gt;
+&lt;h3 id=&#34;聚合脚本优势&#34;&gt;聚合脚本优势
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;金山文档&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有脚本及配置表格汇集在一个文档中，利于统一管理和配置&lt;/li&gt;
+&lt;li&gt;方便后续更新脚本，仅需运行UPDATE脚本即可自动新增最新表格及配置，不再需要手动新建表格框架&lt;/li&gt;
+&lt;li&gt;方便定时任务的添加与查看&lt;/li&gt;
+&lt;li&gt;支持仅推送错误消息、推送昵称等，支持更多的推送方式&lt;/li&gt;
+&lt;li&gt;配置灵活快捷，利于新增脚本及新配置功能&lt;/li&gt;
+&lt;li&gt;支持多脚本共用同一个表格，如WPS(轻量版)、WPS(客户端版)、WPS(稻壳版)脚本共用名称为wps的表格。&lt;br&gt;
+&lt;strong&gt;青龙&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;ql开头的脚本也可以直接在青龙中运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;金山文档建议&#34;&gt;金山文档建议
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;定时任务不设在同一时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-签到列表&#34;&gt;🧾 签到列表
+&lt;/h2&gt;&lt;p&gt;🟢: 正常 🔴: 失效 🟡: 待测 🟤: 随缘&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;状态&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;终端&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;脚本&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;检查日期&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;百度贴吧&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;tieba.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到、只能签6个左右&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;有道云笔记&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;noteyoudao.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;23-08-08&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到、领取空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;什么值得买&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_smzdm.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;抽奖的碎银子，仅抽奖&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;在线工具&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_toollu.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到获取积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;叮咚买菜-叮咚鱼塘&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ddmy_ddyt.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-23&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;领积分、签到、喂饲料&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;AcFun&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_acfun.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得香蕉&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;喜马拉雅&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_xmly.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;希沃白板&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_easinote.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;小木虫&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_xmc.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-08-04&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得金币&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;夸克网盘&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_quark.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;葫芦侠3楼&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;huluxia.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;板块签到&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;中兴社区&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_ztebbs.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得经验和流星&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;小米商城&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_mi.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得米金&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;看雪论坛&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_kanxue.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得雪币&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;哔哩哔哩&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_bilibili.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;直播签到,得经验、辣条和银瓜子&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;vivo社区&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;vivo.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-24&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得积分,抽奖&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;wx&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WPS(打卡版)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_wps_daka.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;金山文档微信小程序报名和打卡，领取权益&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;阿里云盘(自动更新token版)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;aliyun.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到，领取奖励（已无法自动领奖励），领取备份奖励&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;宽带技术网&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;chinadsl.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-08-05&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得积分、做任务、领取猫粮&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;golo汽修大师&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_golo.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得积分,自动更新token&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;中兴商城&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ztemall.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到、做任务,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;万能福利吧&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;wnflb.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-12&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;废文&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_fwxs.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-08-15&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;wx&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;鸿星尔克&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_hxek.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;钉钉AI&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_ddai.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,领算粒&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;科研通&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_kyt.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>基于 Cloudflare Pages 和 Telegram的免费图床搭建教程</title>
+        <link>https://hugo.126330.xyz/p/6/</link>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hugo.126330.xyz/p/6/</guid>
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1729153609714_68747470733a2f2f616c6973742e73616e7975652e736974652f642f696d676265642f3230323431303031313434333537302e706e67.png" alt="Featured image of post 基于 Cloudflare Pages 和 Telegram的免费图床搭建教程" /&gt;&lt;h1 id=&#34;项目地址httpsgithubcommarseventhcloudflare-imgbed&#34;&gt;项目地址https://github.com/MarSeventh/CloudFlare-ImgBed
+&lt;/h1&gt;&lt;p&gt;‼️ &lt;strong&gt;本方案基于 Cloudflare Pages 和 Telegram （文件大小不超过20MB，过大图片会自动压缩）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;一介绍&#34;&gt;一，介绍
+&lt;/h1&gt;&lt;h2 id=&#34;1开源&#34;&gt;&lt;strong&gt;1.开源&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;前端开源（可自行修改、打包使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2炫酷的动效&#34;&gt;&lt;strong&gt;2.炫酷的动效（&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;流畅丝滑的过渡动画~&lt;/li&gt;
+&lt;li&gt;上传文件实现呼吸灯效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3人性化上传&#34;&gt;&lt;strong&gt;3.人性化上传&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持绝大多数常见&lt;strong&gt;图片、视频、动图&lt;/strong&gt;等&lt;/li&gt;
+&lt;li&gt;支持多种上传方式（&lt;strong&gt;拖拽点击、粘贴&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;粘贴上传支持&lt;strong&gt;文件&lt;/strong&gt;和&lt;strong&gt;URL&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;支持批量上传（不限同时选择文件数量，但为了保证稳定性，同时处于上传状态的文件最多为10个）&lt;/li&gt;
+&lt;li&gt;上传显示实时上传进度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;上传后图片无需手动点击，可直接展示在管理页面中&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;过大图片在前端进行压缩，提升上传稳定性和加载性能&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;支持自定义压缩质量，自定义开启前后端压缩功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4多样化复制&#34;&gt;&lt;strong&gt;4.多样化复制&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持&lt;strong&gt;整体复制&lt;/strong&gt;和&lt;strong&gt;单独复制&lt;/strong&gt;（整体复制即将所有链接通过换行串联起来后复制）&lt;/li&gt;
+&lt;li&gt;支持&lt;strong&gt;MarkDown、HTML、BBCode和原始链接&lt;/strong&gt;四种格式复制&lt;/li&gt;
+&lt;li&gt;上传完成后直观展示四种格式链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5支持身份认证防滥用&#34;&gt;&lt;strong&gt;5.支持身份认证、防滥用&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持Web和API&lt;strong&gt;上传认证&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;支持访问域名限制&lt;/li&gt;
+&lt;li&gt;支持上传IP统计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6支持页面自定义&#34;&gt;&lt;strong&gt;6.支持页面自定义&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;页面背景支持&lt;strong&gt;单图&lt;/strong&gt;、&lt;strong&gt;自定义多图轮播&lt;/strong&gt;、&lt;strong&gt;bing随机图轮播&lt;/strong&gt;等多种模式&lt;/li&gt;
+&lt;li&gt;自定义图床名称和Logo&lt;/li&gt;
+&lt;li&gt;自定义网站标题和Icon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7一些小功能&#34;&gt;&lt;strong&gt;7.一些小功能&lt;/strong&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持&lt;strong&gt;随机图&lt;/strong&gt;API，从图床中随机返回一张图片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8以及原版所有特性&#34;&gt;&lt;strong&gt;8.以及原版所有特性&lt;/strong&gt;
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.无限图片储存数量，你可以上传不限数量的图片&lt;/p&gt;
+&lt;p&gt;2.无需购买服务器，托管于 Cloudflare 的网络上，当使用量不超过 Cloudflare 的免费额度时，完全免费&lt;/p&gt;
+&lt;p&gt;3.无需购买域名，可以使用 Cloudflare Pages 提供的&lt;code&gt;*.pages.dev&lt;/code&gt;的免费二级域名，同时也支持绑定自定义域名&lt;/p&gt;
+&lt;p&gt;4.支持&lt;strong&gt;图片审查&lt;/strong&gt; API，可根据需要开启，开启后不良图片将自动屏蔽，不再加载&lt;/p&gt;
+&lt;p&gt;5.支持&lt;strong&gt;后台图片管理&lt;/strong&gt;，可以对上传的图片进行在线预览，添加白名单，黑名单等操作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;二部署&#34;&gt;二，&lt;strong&gt;部署&lt;/strong&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;1创建telegram机器人得到tg_bot_token&#34;&gt;1.创建Telegram机器人得到&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;向&lt;a class=&#34;link&#34; href=&#34;https://t.me/BotFather&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@BotFather&lt;/a&gt;发送&lt;code&gt;/newbot&lt;/code&gt;，按照提示输入bot的备注、用户名等信息。成功创建如图所示的红色部分为&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154237023_Screenshot_20241017_155651_edit_574428759597799.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154237023_Screenshot_20241017_155651_edit_574428759597799.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;创建telegram频道得到tg_chat_id&#34;&gt;创建Telegram频道得到**&lt;code&gt;TG_CHAT_ID&lt;/code&gt;**
+&lt;/h2&gt;&lt;p&gt;创建一个新的频道（Channel），并按下图所示将机器人加入频道&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154241321_Screenshot_20241017_160513_edit_574445754749303.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154241321_Screenshot_20241017_160513_edit_574445754749303.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154241183_Screenshot_20241017_160520_edit_574457710440653.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154241183_Screenshot_20241017_160520_edit_574457710440653.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;选择你刚创建的频道授予机器人管理员权限&#34;&gt;选择你刚创建的频道，授予机器人管理员权限
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154244368_Screenshot_20241017_160533_edit_574471031884085.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154244368_Screenshot_20241017_160533_edit_574471031884085.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;向versatoolsbothttpstmeversatoolsbot转发一条第2步新建频道中的消息获取tg_chat_id频道id&#34;&gt;向&lt;a class=&#34;link&#34; href=&#34;https://t.me/VersaToolsBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@VersaToolsBot&lt;/a&gt;&lt;strong&gt;转发&lt;/strong&gt;一条第2步新建频道中的消息，获取&lt;code&gt;TG_CHAT_ID&lt;/code&gt;（频道ID）
+&lt;/h2&gt;&lt;aside&gt; ‼️ **频道ID前有个负号不要忘了!!**
+&lt;/aside&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729154245823_Screenshot_20241017_161503_edit_574486968755694.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729154245823_Screenshot_20241017_161503_edit_574486968755694.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;部署于cloudflare&#34;&gt;部署于Cloudflare
+&lt;/h2&gt;&lt;p&gt;依托于CF的强大能力，只需简单几步，即可部署本项目，拥有自己的图床。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/MarSeventh/CloudFlare-ImgBed&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Fork&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729153327657_Clip_2024-10-17_16-21-51.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729153327657_Clip_2024-10-17_16-21-51.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 &lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloudflare Dashboard&lt;/a&gt;，进入 Pages 管理页面，选择创建项目，选择&lt;code&gt;连接到 Git 提供程序&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://alist.sanyue.site/d/imgbed/202407201047300.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://alist.sanyue.site/d/imgbed/202407201047300.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;按照页面提示输入项目名称，选择需要连接的 git 仓库，点击&lt;code&gt;部署站点&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将前面获取的&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;和&lt;code&gt;TG_CHAT_ID&lt;/code&gt;分别添加到环境变量中，对应&lt;strong&gt;环境变量名为&lt;code&gt;TG_BOT_TOKEN&lt;/code&gt;和&lt;code&gt;TG_CHAT_ID&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;绑定KV数据库&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个新的KV数据库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuwwzs.pages.dev/file/1729153507708_Clip_2024-10-17_16-24-57.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;https://tuwwzs.pages.dev/file/1729153507708_Clip_2024-10-17_16-24-57.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入项目对应&lt;code&gt;设置&lt;/code&gt;&amp;gt;&lt;code&gt;函数&lt;/code&gt;&amp;gt;&lt;code&gt;KV 命名空间绑定&lt;/code&gt;&amp;gt;&lt;code&gt;编辑绑定&lt;/code&gt;&amp;gt;&lt;code&gt;变量名称&lt;/code&gt;，填写&lt;code&gt;img_url&lt;/code&gt;，KV命名空间选择刚才创建好的KV数据库&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;重试部署&lt;/code&gt;，此时项目即可正常使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>Gmeek博客一键搭搭建教程</title>
         <link>https://hugo.126330.xyz/p/3/</link>
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>

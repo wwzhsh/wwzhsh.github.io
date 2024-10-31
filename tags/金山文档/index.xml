@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>金山文档 on 万物之时</title>
+        <link>https://hugo.126330.xyz/tags/%E9%87%91%E5%B1%B1%E6%96%87%E6%A1%A3/</link>
+        <description>Recent content in 金山文档 on 万物之时</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>万物之时</copyright>
+        <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo.126330.xyz/tags/%E9%87%91%E5%B1%B1%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>WPS定时重放脚本框架，零成本，无需服务器，无需部署</title>
+        <link>https://hugo.126330.xyz/p/8/</link>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hugo.126330.xyz/p/8/</guid>
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1730218015576_Clip_2024-10-30_00-06-39.png" alt="Featured image of post WPS定时重放脚本框架，零成本，无需服务器，无需部署" /&gt;&lt;h1 id=&#34;项目地址githubhttpsgithubcomimokisign_script&#34;&gt;项目地址&lt;a class=&#34;link&#34; href=&#34;https://github.com/imoki/sign_script&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt;
+&lt;/h1&gt;&lt;h1 id=&#34;教程地址默库httpsmokuuskg&#34;&gt;教程地址&lt;a class=&#34;link&#34; href=&#34;https://moku.us.kg/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;默库&lt;/a&gt;
+&lt;/h1&gt;&lt;h1 id=&#34;项目介绍&#34;&gt;项目介绍
+&lt;/h1&gt;&lt;h2 id=&#34;聚合脚本polymerization&#34;&gt;聚合脚本（polymerization）
+&lt;/h2&gt;&lt;p&gt;文件夹“polymerization”内的所有脚本统称为聚合脚本，运行UPDATE.js即可自动生成表格及配置内容。&lt;br&gt;
+兼容青龙脚本，可直接在青龙内下运行&lt;/p&gt;
+&lt;h3 id=&#34;聚合脚本优势&#34;&gt;聚合脚本优势
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;金山文档&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有脚本及配置表格汇集在一个文档中，利于统一管理和配置&lt;/li&gt;
+&lt;li&gt;方便后续更新脚本，仅需运行UPDATE脚本即可自动新增最新表格及配置，不再需要手动新建表格框架&lt;/li&gt;
+&lt;li&gt;方便定时任务的添加与查看&lt;/li&gt;
+&lt;li&gt;支持仅推送错误消息、推送昵称等，支持更多的推送方式&lt;/li&gt;
+&lt;li&gt;配置灵活快捷，利于新增脚本及新配置功能&lt;/li&gt;
+&lt;li&gt;支持多脚本共用同一个表格，如WPS(轻量版)、WPS(客户端版)、WPS(稻壳版)脚本共用名称为wps的表格。&lt;br&gt;
+&lt;strong&gt;青龙&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;ql开头的脚本也可以直接在青龙中运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;金山文档建议&#34;&gt;金山文档建议
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;定时任务不设在同一时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-签到列表&#34;&gt;🧾 签到列表
+&lt;/h2&gt;&lt;p&gt;🟢: 正常 🔴: 失效 🟡: 待测 🟤: 随缘&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;状态&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;终端&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;脚本&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;检查日期&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;百度贴吧&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;tieba.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到、只能签6个左右&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;有道云笔记&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;noteyoudao.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;23-08-08&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到、领取空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;什么值得买&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_smzdm.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;抽奖的碎银子，仅抽奖&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;在线工具&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_toollu.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到获取积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;叮咚买菜-叮咚鱼塘&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ddmy_ddyt.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-23&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;领积分、签到、喂饲料&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;AcFun&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_acfun.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得香蕉&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;喜马拉雅&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_xmly.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;希沃白板&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_easinote.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;小木虫&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_xmc.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-08-04&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得金币&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;夸克网盘&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_quark.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;葫芦侠3楼&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;huluxia.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;板块签到&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;中兴社区&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_ztebbs.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得经验和流星&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;小米商城&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_mi.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-07-18&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得米金&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;看雪论坛&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_kanxue.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得雪币&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;哔哩哔哩&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_bilibili.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;直播签到,得经验、辣条和银瓜子&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;vivo社区&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;vivo.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-24&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得积分,抽奖&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;wx&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WPS(打卡版)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_wps_daka.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;金山文档微信小程序报名和打卡，领取权益&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;阿里云盘(自动更新token版)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;aliyun.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到，领取奖励（已无法自动领奖励），领取备份奖励&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;宽带技术网&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;chinadsl.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-08-05&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得积分、做任务、领取猫粮&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;golo汽修大师&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_golo.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-20&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到得积分,自动更新token&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;中兴商城&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ztemall.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到、做任务,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;万能福利吧&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;wnflb.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-06-12&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;废文&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_fwxs.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-08-15&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;wx&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;鸿星尔克&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_hxek.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;APP&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;钉钉AI&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_ddai.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,领算粒&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;🟢️&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WEB&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;科研通&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ql_kyt.js&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24-09-07&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;签到,得积分&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
