@@ -13,12 +13,9 @@
         <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
         
         <guid>https://hugo.126330.xyz/p/9/</guid>
-        <description>&lt;img src="https://tuwwzs.pages.dev/file/1730386699078_Clip_2024-10-31_22-57-51.png" alt="Featured image of post serv00搭halo" /&gt;&lt;p&gt;这里是优化后的步骤：&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;步骤-1-注册账号&#34;&gt;步骤 1: 注册账号
+        <description>&lt;img src="https://tuwwzs.pages.dev/file/1730386699078_Clip_2024-10-31_22-57-51.png" alt="Featured image of post serv00搭halo" /&gt;&lt;h3 id=&#34;步骤-1-注册账号&#34;&gt;步骤 1: 注册账号
 &lt;/h3&gt;&lt;p&gt;在 &lt;strong&gt;[Serv00](&lt;a class=&#34;link&#34; href=&#34;https://www.serv00.com/offer/create_new_account&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Serv00.com » Create an account&lt;/a&gt;)&lt;/strong&gt; 注册一个账号。&lt;/p&gt;
-&lt;hr&gt;
 &lt;h3 id=&#34;步骤-2-部署准备&#34;&gt;步骤 2: 部署准备
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;
@@ -38,7 +35,6 @@
 &lt;p&gt;通过 &lt;code&gt;ssh&lt;/code&gt; 连接到虚拟主机。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
 &lt;p&gt;serv00安装pm2：脚本来源&lt;a class=&#34;link&#34; href=&#34;https://linux.do/u/Saika&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Saika&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.rappit.site/2024/01/27/serv00_logs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;博客&lt;/a&gt;&lt;/p&gt;
@@ -60,8 +56,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; domains &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; mkdir halo &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; halo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;步骤-5-下载-halo-jar-包&#34;&gt;步骤 5: 下载 Halo Jar 包
+&lt;/div&gt;&lt;h3 id=&#34;步骤-5-下载-halo-jar-包&#34;&gt;步骤 5: 下载 Halo Jar 包
 &lt;/h3&gt;&lt;p&gt;下载编译好的 &lt;strong&gt;Jar&lt;/strong&gt; 包（可选择本项目或官方版本）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -71,8 +66,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/V-UwU/halo-PaaS/releases/download/v2.17.2/halo.jar
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;步骤-6-配置数据库和应用&#34;&gt;步骤 6: 配置数据库和应用
+&lt;/div&gt;&lt;h3 id=&#34;步骤-6-配置数据库和应用&#34;&gt;步骤 6: 配置数据库和应用
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在 &lt;strong&gt;Serv00&lt;/strong&gt; 面板中新建一个 &lt;strong&gt;MySQL&lt;/strong&gt; 数据库。&lt;/li&gt;
 &lt;li&gt;在 &lt;code&gt;halo&lt;/code&gt; 目录中新建文件夹 &lt;code&gt;.halo&lt;/code&gt; 并创建配置文件 &lt;code&gt;application.yaml&lt;/code&gt;：&lt;/li&gt;
@@ -111,8 +105,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;cache&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;level&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;步骤-7-创建启动脚本&#34;&gt;步骤 7: 创建启动脚本
+&lt;/div&gt;&lt;h3 id=&#34;步骤-7-创建启动脚本&#34;&gt;步骤 7: 创建启动脚本
 &lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;halo&lt;/code&gt; 目录中创建 &lt;code&gt;run.sh&lt;/code&gt; 文件：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -139,7 +132,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果运行正常，按 &lt;code&gt;Ctrl+C&lt;/code&gt; 停止运行。&lt;/p&gt;
-&lt;hr&gt;
 &lt;h3 id=&#34;步骤-9-使用-pm2-管理服务&#34;&gt;步骤 9: 使用 PM2 管理服务
 &lt;/h3&gt;&lt;p&gt;通过 &lt;strong&gt;pm2&lt;/strong&gt; 管理 Halo：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -150,8 +142,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x run.sh &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; pm2 start ./run.sh --name halo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;步骤-10-设置自动重启&#34;&gt;步骤 10: 设置自动重启
+&lt;/div&gt;&lt;h3 id=&#34;步骤-10-设置自动重启&#34;&gt;步骤 10: 设置自动重启
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在 &lt;strong&gt;Panel&lt;/strong&gt; 的 &lt;strong&gt;Cron jobs&lt;/strong&gt; 选项卡中，选择 &lt;strong&gt;Add cron job&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;配置：
@@ -180,8 +171,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pm2 save
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;通过这些步骤即可完成 Halo 部署和自动重启设置。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;通过这些步骤即可完成 Halo 部署和自动重启设置。&lt;/p&gt;
 </description>
         </item>
         
