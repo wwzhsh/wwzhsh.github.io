@@ -17,10 +17,19 @@
     <loc>https://hugo.126330.xyz/tags/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://hugo.126330.xyz/categories/%E7%99%BD%E5%AB%96/</loc>
+    <lastmod>2024-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.126330.xyz/p/11/</loc>
+    <lastmod>2024-11-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hugo.126330.xyz/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/tags/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2024-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.126330.xyz/tags/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/tags/%E6%9D%82%E8%AE%B0/</loc>
@@ -92,9 +101,6 @@
     <loc>https://hugo.126330.xyz/p/1/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hugo.126330.xyz/categories/%E7%99%BD%E5%AB%96/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hugo.126330.xyz/tags/%E5%AF%BC%E8%88%AA/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -111,9 +117,6 @@
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/p/blog-post-slug/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hugo.126330.xyz/tags/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/page/</loc>
