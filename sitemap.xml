@@ -3,16 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hugo.126330.xyz/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/categories/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.126330.xyz/tags/cloudreve/</loc>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/post/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/tags/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.126330.xyz/categories/%E7%99%BD%E5%AB%96/</loc>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.126330.xyz/tags/%E7%BD%91%E7%9B%98/</loc>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.126330.xyz/p/14/</loc>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/tags/windows/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
@@ -33,9 +45,6 @@
     <lastmod>2024-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/p/10/</loc>
-    <lastmod>2024-11-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hugo.126330.xyz/categories/%E7%99%BD%E5%AB%96/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.126330.xyz/p/11/</loc>
